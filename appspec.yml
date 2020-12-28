@@ -5,17 +5,17 @@ files:
     destination: /var/www/portfolio/
 hooks:
   BeforeInstall:
-    - location: scripts/beforeinstall
+    - location: scripts/beforeinstall.sh
       timeout: 300
       runas: root
-    - location: scripts/bootstrap_ec2
+    - location: scripts/bootstrap_ec2.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: scripts/applicationstart
+    - location: scripts/applicationstart.sh
       timeout: 180
       runas: root
   ApplicationStop:
-    - location: scripts/applicationstop
+    - location: scripts/applicationstop.sh
       timeout: 300
       runas: root
