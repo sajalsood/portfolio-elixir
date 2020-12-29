@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -rf /var/www/portfolio/
+rm -rf /var/www/portfolio
