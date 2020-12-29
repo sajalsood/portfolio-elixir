@@ -13,4 +13,4 @@ cd /var/www/portfolio/
 sudo mix deps.get
 sudo mix compile -Y
 sudo mix release.init
-sudo mix.release
+sudo mix release
