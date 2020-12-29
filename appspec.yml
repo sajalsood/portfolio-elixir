@@ -8,10 +8,10 @@ hooks:
     - location: scripts/beforeinstall.sh
       timeout: 300
       runas: root
+  AfterInstall:
     - location: scripts/bootstrap_ec2.sh
       timeout: 300
       runas: root
-  AfterInstall:
     - location: scripts/applicationstart.sh
       timeout: 180
       runas: root
