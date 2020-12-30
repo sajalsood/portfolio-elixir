@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Whole Whale - Sajal Sood</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/overrides.css">
+    
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Trirong:wght@200&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="top">
+<h1><a href="/">Sajal Sood</a></h1>
+<p>A bit about me !!!</p>
+</header>
+      <nav>
+<ul>
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/posts">Posts</a></li>
+</ul>
+</nav>
+      <hr>
+      <main><article class="post"><header><h1 id="whole-whale">Whole Whale</h1><p>
+      Monday, 20 Apr 2020
+      
+        <span class="tags">
+          Tags:
+          
+            <a class="tag" href="/tags/resume">resume</a></span></p></header><div><p>As the resident developer at Whole Whale, a small digital agency focused on serving nonprofits and mission-driven companies, Simon spearheaded and managed the relaunch of our site by building a custom theme.</p></div></article></main>
+      <hr>
+      <footer>
+        
+<!--=====================================-->
+<!-- Override "includes/footer.html.eex" -->
+<!-- to customize your footer contents.  -->
+<!--=====================================-->
+
+        <p>
+          Super-Powered by <a href="https://github.com/Dalgona/Serum">Serum</a> v1.4.1,
+          with <a href="https://github.com/Dalgona/serum-theme-essence">Essence</a> theme
+        </p>
+      </footer>
+    </div>
+    <script src="/assets/js/prism.js"></script>
+  </body>
+</html>
+<script>
+const ws_url = "ws://" + location.host + "/serum_live_reloader";
+var ws;
+
+connect();
+
+function connect() {
+  ws = new WebSocket(ws_url);
+  ws.onmessage = onMessage;
+  ws.onclose = onClose;
+}
+
+function onMessage(e) {
+  if (e.data === "reload") {
+    location.reload();
+  }
+}
+
+function onClose(e) {
+  console.warn("WebSocket disconnected from server. Reconnecting in 10 seconds.");
+  setTimeout(connect, 10000)
+}
+</script>
